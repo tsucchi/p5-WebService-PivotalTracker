@@ -60,5 +60,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/tsucchi/p5-WebService-PivotalTracker/issues"
+      },
+      "homepage" : "https://github.com/tsucchi/p5-WebService-PivotalTracker",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/tsucchi/p5-WebService-PivotalTracker.git",
+         "web" : "https://github.com/tsucchi/p5-WebService-PivotalTracker"
+      }
+   },
    "version" : "0.01"
 }

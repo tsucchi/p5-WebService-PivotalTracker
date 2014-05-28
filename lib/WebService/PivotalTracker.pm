@@ -104,19 +104,19 @@ WebService::PivotalTracker is API client for Pivotal Tracker.
 
 =head1 METHODS
 
-=head2 C<$class->new( token => 'your api token' )>
+=head2 $instance = $class->new( token => 'your API token' )
 
 create instance
 
-=head2 C<$self->get($end_point)>
+=head2 $response_href = $self->get($end_point)
 
 call API using GET request
 
-=head2 C<$self->post($end_point, $data_href)>
+=head2 $response_href = $self->post($end_point, $data_href)
 
 call API using POST request
 
-=head2 C<$self->delete($end_point)>
+=head2 $response_href = $self->delete($end_point)
 
 call API using DELETE request
 

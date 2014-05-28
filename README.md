@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/tsucchi/p5-WebService-PivotalTracker.png?branch=master)](https://travis-ci.org/tsucchi/p5-WebService-PivotalTracker)
 # NAME
 
 WebService::PivotalTracker - Web API client for PivotalTracker
@@ -17,19 +17,19 @@ WebService::PivotalTracker is API client for Pivotal Tracker.
 
 # METHODS
 
-## `$class-`new( token => 'your api token' )>
+## $instance = $class->new( token => 'your API token' )
 
 create instance
 
-## `$self-`get($end\_point)>
+## $response = $self->get($end\_point)
 
 call API using GET request
 
-## `$self-`post($end\_point, $data\_href)>
+## $response = $self->post($end\_point, $data\_href)
 
 call API using POST request
 
-## `$self-`delete($end\_point)>
+## $response = $self->delete($end\_point)
 
 call API using DELETE request
 
