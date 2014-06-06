@@ -56,7 +56,7 @@ sub _request {
     my $req = Furl::Request->new($method, $uri, ['X-TrackerToken' => $self->token, @additional_header], $data_json);
     my $res = $ua->request($req);
     unless ( $res->is_success ) {
-        Carp::croak $res->status_line;
+        Carp::croak $res->status_line . $res->content;
     }
     return if ( $res->code eq '204' );# No Content
     return decode_json($res->content);
@@ -72,6 +72,13 @@ sub post {
     my $data_json = encode_json($data_href);
     my @additional_header = ( 'Content-Type' => 'application/json' );
     return $self->_request('POST', $end_point, $data_json, @additional_header);
+}
+
+sub put {
+    my ($self, $end_point, $data_href) = @_;
+    my $data_json = encode_json($data_href);
+    my @additional_header = ( 'Content-Type' => 'application/json' );
+    return $self->_request('PUT', $end_point, $data_json, @additional_header);
 }
 
 sub delete {
@@ -115,6 +122,10 @@ call API using GET request
 =head2 $response_href = $self->post($end_point, $data_href)
 
 call API using POST request
+
+=head2 $response_href = $self->put($end_point, $data_href)
+
+call API using PUT request
 
 =head2 $response_href = $self->delete($end_point)
 
