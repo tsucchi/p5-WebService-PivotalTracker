@@ -3,6 +3,7 @@ requires 'JSON';
 recommends 'JSON::XS';
 requires 'Mouse';
 requires 'perl', '5.008005';
+requires 'URI';
 
 on configure => sub {
     requires 'CPAN::Meta';

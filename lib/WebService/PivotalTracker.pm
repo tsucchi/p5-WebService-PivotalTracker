@@ -5,6 +5,7 @@ use Mouse;
 our $VERSION = "0.01";
 
 use Furl;
+use URI;
 use Carp ();
 use JSON qw(decode_json encode_json);
 
@@ -63,7 +64,13 @@ sub _request {
 }
 
 sub get {
-    my ($self, $end_point) = @_;
+    my ($self, $end_point, $query_param_href) = @_;
+
+    if ( defined $query_param_href ) {
+        my $uri = URI->new();
+        $uri->query_form( %{ $query_param_href } );
+        $end_point .= $uri->as_string;
+    }
     return $self->_request('GET', $end_point);
 }
 
@@ -115,7 +122,7 @@ WebService::PivotalTracker is API client for Pivotal Tracker.
 
 create instance
 
-=head2 $response_href = $self->get($end_point)
+=head2 $response_href = $self->get($end_point, $query_param_href)
 
 call API using GET request
 
