@@ -141,7 +141,7 @@ call API using DELETE request
 
 =head1 SEE ALSO
 
-L<http://www.pivotaltracker.com/help/api/rest/v5>, L<http://search.cpan.org/dist/WWW-PivotalTracker/>, L<http://search.cpan.org/dist/WebService::PivotalTracker/>
+L<http://www.pivotaltracker.com/help/api/rest/v5>, L<http://search.cpan.org/dist/WWW-PivotalTracker/>, L<http://search.cpan.org/dist/WebService-PivotalTracker/>
 
 =head1 LICENSE
 
