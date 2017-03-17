@@ -1,19 +1,19 @@
-[![Build Status](https://travis-ci.org/tsucchi/p5-WebService-PivotalTracker.png?branch=master)](https://travis-ci.org/tsucchi/p5-WebService-PivotalTracker)
+[![Build Status](https://travis-ci.org/tsucchi/p5-WebService-PivotalTracker-Simple.svg?branch=master)](https://travis-ci.org/tsucchi/p5-WebService-PivotalTracker-Simple)
 # NAME
 
-WebService::PivotalTracker - Web API client for PivotalTracker
+WebService::PivotalTracker::Simple - Web API client for PivotalTracker
 
 # SYNOPSIS
 
-    use WebService::PivotalTracker;
-    my $pivotal = WebService::PivotalTracker->new( token => ... );
+    use WebService::PivotalTracker::Simple;
+    my $pivotal = WebService::PivotalTracker::Simple->new( token => ... );
     my $project_id = ...;
     my $story_id   = ...;
     my $response = $pivotal->get("/projects/$project_id/stories/$story_id");
 
 # DESCRIPTION
 
-WebService::PivotalTracker is API client for Pivotal Tracker.
+WebService::PivotalTracker is very thin API client for Pivotal Tracker.
 
 # METHODS
 
@@ -39,7 +39,7 @@ call API using DELETE request
 
 # SEE ALSO
 
-[http://www.pivotaltracker.com/help/api/rest/v5](http://www.pivotaltracker.com/help/api/rest/v5), [http://search.cpan.org/dist/WWW-PivotalTracker/](http://search.cpan.org/dist/WWW-PivotalTracker/)
+[http://www.pivotaltracker.com/help/api/rest/v5](http://www.pivotaltracker.com/help/api/rest/v5), [http://search.cpan.org/dist/WWW-PivotalTracker/](http://search.cpan.org/dist/WWW-PivotalTracker/), [http://search.cpan.org/dist/WebService::PivotalTracker/](http://search.cpan.org/dist/WebService::PivotalTracker/)
 
 # LICENSE
 

@@ -4,7 +4,7 @@
       "Takuya Tsuchida <tsucchi@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v1.0.0, CPAN::Meta::Converter version 2.141170",
+   "generated_by" : "Minilla/v3.0.10, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "WebService-PivotalTracker",
+   "name" : "WebService-PivotalTracker-Simple",
    "no_index" : {
       "directory" : [
          "t",
@@ -30,7 +30,8 @@
          "requires" : {
             "CPAN::Meta" : "0",
             "CPAN::Meta::Prereqs" : "0",
-            "Module::Build" : "0.38"
+            "Module::Build" : "0",
+            "Module::Build::Tiny" : "0.035"
          }
       },
       "develop" : {
@@ -63,14 +64,15 @@
    "release_status" : "unstable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/tsucchi/p5-WebService-PivotalTracker/issues"
+         "web" : "https://github.com/tsucchi/p5-WebService-PivotalTracker-Simple/issues"
       },
-      "homepage" : "https://github.com/tsucchi/p5-WebService-PivotalTracker",
+      "homepage" : "https://github.com/tsucchi/p5-WebService-PivotalTracker-Simple",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/tsucchi/p5-WebService-PivotalTracker.git",
-         "web" : "https://github.com/tsucchi/p5-WebService-PivotalTracker"
+         "url" : "git://github.com/tsucchi/p5-WebService-PivotalTracker-Simple.git",
+         "web" : "https://github.com/tsucchi/p5-WebService-PivotalTracker-Simple"
       }
    },
-   "version" : "0.01"
+   "version" : "0.01",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }
