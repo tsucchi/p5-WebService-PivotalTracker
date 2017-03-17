@@ -23,8 +23,8 @@ my %args = (
         'Module::Build' => 0.38,
     },
 
-    name            => 'WebService-PivotalTracker',
-    module_name     => 'WebService::PivotalTracker',
+    name            => 'WebService-PivotalTracker-Simple',
+    module_name     => 'WebService::PivotalTracker::Simple',
     allow_pureperl => 0,
 
     script_files => [glob('script/*'), glob('bin/*')],

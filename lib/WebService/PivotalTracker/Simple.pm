@@ -1,4 +1,4 @@
-package WebService::PivotalTracker;
+package WebService::PivotalTracker::Simple;
 use 5.008005;
 use Mouse;
 
@@ -101,12 +101,12 @@ __END__
 
 =head1 NAME
 
-WebService::PivotalTracker - Web API client for PivotalTracker
+WebService::PivotalTracker::Simple - Web API client for PivotalTracker
 
 =head1 SYNOPSIS
 
-    use WebService::PivotalTracker;
-    my $pivotal = WebService::PivotalTracker->new( token => ... );
+    use WebService::PivotalTracker::Simple;
+    my $pivotal = WebService::PivotalTracker::Simple->new( token => ... );
     my $project_id = ...;
     my $story_id   = ...;
     my $response = $pivotal->get("/projects/$project_id/stories/$story_id");
@@ -114,7 +114,7 @@ WebService::PivotalTracker - Web API client for PivotalTracker
 
 =head1 DESCRIPTION
 
-WebService::PivotalTracker is API client for Pivotal Tracker.
+WebService::PivotalTracker is very thin API client for Pivotal Tracker.
 
 =head1 METHODS
 
@@ -141,7 +141,7 @@ call API using DELETE request
 
 =head1 SEE ALSO
 
-L<http://www.pivotaltracker.com/help/api/rest/v5>, L<http://search.cpan.org/dist/WWW-PivotalTracker/>
+L<http://www.pivotaltracker.com/help/api/rest/v5>, L<http://search.cpan.org/dist/WWW-PivotalTracker/>, L<http://search.cpan.org/dist/WebService::PivotalTracker/>
 
 =head1 LICENSE
 
