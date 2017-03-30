@@ -17,13 +17,6 @@ has 'token' => (
     required => 1,
 );
 
-# TODO: support object response
-# has 'use_raw_response' => (
-#     is      => 'ro',
-#     isa     => 'Bool',
-#     default => 1,
-# );
-
 has 'timeout' => (
     is      => 'ro',
     isa     => 'Int',
