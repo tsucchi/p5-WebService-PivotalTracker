@@ -107,7 +107,7 @@ WebService::PivotalTracker::Simple - Web API client for PivotalTracker
 
 =head1 DESCRIPTION
 
-WebService::PivotalTracker is very thin API client for Pivotal Tracker.
+WebService::PivotalTracker::Simple is very thin API client for Pivotal Tracker.
 
 =head1 METHODS
 

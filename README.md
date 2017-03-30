@@ -39,7 +39,7 @@ call API using DELETE request
 
 # SEE ALSO
 
-[http://www.pivotaltracker.com/help/api/rest/v5](http://www.pivotaltracker.com/help/api/rest/v5), [http://search.cpan.org/dist/WWW-PivotalTracker/](http://search.cpan.org/dist/WWW-PivotalTracker/), [http://search.cpan.org/dist/WebService::PivotalTracker/](http://search.cpan.org/dist/WebService::PivotalTracker/)
+[http://www.pivotaltracker.com/help/api/rest/v5](http://www.pivotaltracker.com/help/api/rest/v5), [http://search.cpan.org/dist/WWW-PivotalTracker/](http://search.cpan.org/dist/WWW-PivotalTracker/), [http://search.cpan.org/dist/WebService-PivotalTracker/](http://search.cpan.org/dist/WebService-PivotalTracker/)
 
 # LICENSE
 
